@@ -1,8 +1,12 @@
 # Instruções de instalação e execução
 
 Para executar a aplicação é necessário ter instalados Ruby 2.1+ e Rails 4+.
-Primeiramente, clone o repositório na sua máquina com o seguinte comando: git clone git@github.com:jonatandahora/avaliacao_desenvolvedor.git.
+
+Primeiramente, clone o repositório na sua máquina com o seguinte comando: git clone git@github.com:jonatandahora/avaliacao_desenvolvedor.gitt
 Atualize e instale as gems necessárias com bundle install.
+
 execute a migração do banco com rake db:migrate.
+
 Rode a aplicação com o comando rails server.
+
 Acesse a aplicação no endereço http://localhost:3000/.
