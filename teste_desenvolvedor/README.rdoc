@@ -1,28 +1,8 @@
-== README
+# Instruções de instalação e execução
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Para executar a aplicação é necessário ter instalados Ruby 2.1+ e Rails 4+.
+Primeiramente, clone o repositório na sua máquina com o seguinte comando: git clone git@github.com:jonatandahora/avaliacao_desenvolvedor.git.
+Atualize e instale as gems necessárias com bundle install.
+execute a migração do banco com rake db:migrate.
+Rode a aplicação com o comando rails server.
+Acesse a aplicação no endereço http://localhost:3000/.
