@@ -1,0 +1,32 @@
+%div.page-header
+  %h1.text-center Vendas Efetuadas
+%table.table.table-condensed.table-striped.table-responsive
+  %thead
+    %tr
+      %td Comprador
+      %td Descrição
+      %td Preço Unitário
+      %td Quantidade
+      %td Total
+      %td Endereço
+      %td Fornecedor
+  %tbody
+    - @vendas.each do |item|
+      %tr
+        %td= item.comprador
+        %td= item.descricao
+        %td= item.preco_unitario
+        %td= item.quantidade
+        %td= item.quantidade * item.preco_unitario
+        %td= item.endereco
+        %td= item.fornecedor
+
+  %tfoot
+    %tr
+      %td
+      %td
+      %td
+      %td Receita Bruta:
+      %td= @total
+      %td
+      %td

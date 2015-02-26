@@ -1,0 +1,10 @@
+%div.page-header
+  %h1.text-center Importar Dados de Vendas
+%div.container
+  %div.col-md-4
+  %div.col-md-8
+    = form_tag({action: 'show', controller: 'vendas'}, {multipart: true}) do
+      %div.col-lg-4
+        = file_field_tag :file, data: {filename_placement:  'inside'}
+      %div.col-lg-2
+        = submit_tag 'Importar', class: 'btn btn-default pull-right'
